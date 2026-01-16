@@ -1,1 +1,94 @@
-<!DOCTYPE html> <html> <head> <title>😁HeeeHeee😁</title> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <style> p{ text-align: center; font-size: 32px; font-family: candara, Oswald; } img{ display: block; margin: auto; width: 25%; } </style> </head> <body> <p>Can We Hang Out Soon?</p> <img src="https://media.tenor.com/sKk94yRSWUoAAAAM/cat.gif"> </body> <title>Botoes</title> <style> #btn1{ position: fixed; top: 70%; left: 55%; transform: translate(-50%, -50%); } #btn2{ position: absolute; top: 68%; left: 39%; } </style> </html> <body> <button id="btn1">YES BABYY❤️😍😘</button> <button id="btn2">NO😢</button> <script> const button2=document.getElementById('btn2'); let left= 40; button2.addEventListener('mouseover', function() { if (left==40) { left= 44; }else{ left=40; } this.style.left=left + '%'; }); document.getElementById('btn1').addEventListener('click',function(){ alert('YAYY😁 THANK YOU BABYY😍❤️😘') }); </script> </body> </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>😁HeeeHeee😁</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body{
+            font-family: Candara, Oswald, sans-serif;
+            text-align: center;
+        }
+
+        p{
+            font-size: 32px;
+        }
+
+        img{
+            display: block;
+            margin: 20px auto;
+            width: 25%;
+        }
+
+        button{
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        #btn1{
+            position: fixed;
+            top: 70%;
+            left: 55%;
+            transform: translate(-50%, -50%);
+        }
+
+        #btn2{
+            position: absolute;
+            top: 70%;
+            left: 40%;
+        }
+
+        /* 📱 Mobile Responsive */
+        @media (max-width: 768px){
+            p{
+                font-size: 22px;
+            }
+
+            img{
+                width: 60%;
+            }
+
+            button{
+                font-size: 16px;
+            }
+
+            #btn1{
+                top: 75%;
+                left: 60%;
+            }
+
+            #btn2{
+                top: 75%;
+                left: 30%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>Can We Hang Out Soon?</p>
+
+    <img src="https://media.tenor.com/sKk94yRSWUoAAAAM/cat.gif" alt="cute cat">
+
+    <button id="btn1">YES BABYY❤️😍😘</button>
+    <button id="btn2">NO😢</button>
+
+    <script>
+        const button2 = document.getElementById('btn2');
+        let left = 40;
+
+        button2.addEventListener('mouseover', function () {
+            left = (left === 40) ? 55 : 40;
+            this.style.left = left + '%';
+        });
+
+        document.getElementById('btn1').addEventListener('click', function () {
+            alert('YAYY😁 THANK YOU BABYY😍❤️😘');
+        });
+    </script>
+
+</body>
+</html>
